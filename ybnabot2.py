@@ -34,17 +34,17 @@ def danger6_faces(x):
 
 def ybna10_faces(x):
 	return{
-		1: 'No, And...',
-		2: 'No, And, But...',
-		3: 'No...',
-		4: 'Not, But...',
-		5: 'No, But, And...',
-		6: 'Yes, But, And...',
+	1: 'No, And...',
+	2: 'No, And, But...',
+	3: 'No...',
+	4: 'Not, But...',
+	5: 'No, But, And...',
+	6: 'Yes, But, And...',
         7: 'Yes, But...',
         8: 'Yes...',
         9: 'Yes, And, But...',
         10: 'Yes, And...'
-		}[x]
+	}[x]
 
 def danger10_faces(x):
         return{
@@ -82,8 +82,9 @@ async def on_message(message):
         await message.author.send('!y d10 - Choose 10 sided dice')
         await message.author.send('!y dice - Displays which dice are selected (d6 or d10)')
         await message.author.send('!y help - This message!')
-        await message.author.send('txutfz73 credits here')
-        await message.author.send('github link here')
+        await message.author.send('The "Yes, but... No, And..." system was created and developed by txutfz73.')
+        await message.author.send('https://www.reddit.com/user/txutfz73/')
+        await message.author.send('Bot GitHub: https://github.com/BugbearSteve/YBNA-Bot')
         return
 
 
