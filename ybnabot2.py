@@ -116,7 +116,7 @@ async def on_message(message):
                 z = int(message.content[2])
                 for x in range(z):
                     y = randint(1,6)
-                    response = 'Roll ' + str(x+1) + ': ' + ybna6_faces(y) + str(sides)
+                    response = 'Roll ' + str(x+1) + ': ' + ybna6_faces(y)
                     await message.channel.send(response)
 
         if len(message.content)>=4:
@@ -134,7 +134,7 @@ async def on_message(message):
                 z = int(message.content[2])
                 for x in range(z):
                     y = randint(1,10)
-                    response = 'Roll ' + str(x+1) + ': ' + ybna10_faces(y) + str(sides)
+                    response = 'Roll ' + str(x+1) + ': ' + ybna10_faces(y)
                     await message.channel.send(response)
 
         if len(message.content)>=4:
